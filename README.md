@@ -82,6 +82,18 @@ Features
    sender) yang sangat detail tentang sender telah mengirim data kemana, receiver telah menerima file apa, status
    keberhasilan, status kegagalan, status pending, checksum, ukuran file, time data dikirim, dan time data sampai
    tujuan. Melalui fitur ini anda dapat mengirim ulang kembali jika usaha pengiriman sebelumnya telah gagal.
+   
+5. **Secure Socket Layer (SSL) Data transfer (experimental feature)**
+
+   File confidential yang anda transfer diamankan melalui jalur koneksi SSL. Fitur ini masih experimental, karena kadang
+   jalan kadang tidak (entah. hmmm ada yang mau bantu sumbang coding?) . Secara default Opj-Ssfrs berjalan di jalur 
+   koneksi non SSL. Tapi masih tetap bisa diamankan melalui fitur registered ip addresses authorization
+   
+   
+6. **Registered IP address authorization**
+
+   Opj-Ssfrs dapat disetting hanya menerima request dari IP - IP address tertentu saja. Fitur ini dapat anda setting 
+   pada `opj-ssfrs/server/config.js` pada line `config.registeredIp = [];`
 
 
 
