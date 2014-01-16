@@ -54,6 +54,34 @@ Lanjutkan dengan menyesuaikan beberapa baris code dari file `test_client.js` .
 Test kirim file dengan perintah
 
     node test_client.js nama_file_yg_ada_di_var_filePath.ext [enter]
+    
+Features
+--------
+1. **Multipart / partial data transfer**
+
+   Contoh: Jika anda punya file sebesar 50MB. Karena situasi koneksi yang tidak dapat handle transfer data langsung 
+   sebesar 50MB, maka Opj-Ssfrs dapat mencacah file dengan ukuran sesuai dengan keinginan anda lalu mengirimkannnya 
+   part per part.
+   
+2. **Execute command after data received completely**
+   
+   Dapat menjalankan perintah apapun setelah file received completely. Contoh: anda mengirim file .zip sesampainya file 
+   di tempat tujuan sebagai contoh anda bisa langsung menjalankan command `unzip nama_file.zip` 
+   atau `php extract_then_process.php nama_file.zip` . Imajinasikan didalam file .zip itu ada file.sql INSERT yg
+   langsung ingin diexecute.
+
+3. **Queueing and executing job to gearman job server**
+
+   Opj-Ssfrs menyediakan mekanisme integrasi dengan gearman job server sehingga anda. Imajinasikan anda transfer data
+   photo, sesampainya di tujuan anda dapat langsung mentrigger worker untuk cropping, resize, watermarking, dan
+   lain-lain.
+   
+4. **Detail data transfer information**
+
+   Layaknya kantor pos dan tukang pos Opj-Ssfrs mencatat dan menyediakan informasi dari dua sisi (sisi receiver dan sisi
+   sender) yang sangat detail tentang sender telah mengirim data kemana, receiver telah menerima file apa, status
+   keberhasilan, status kegagalan, status pending, checksum, ukuran file, time data dikirim, dan time data sampai
+   tujuan. Melalui fitur ini anda dapat mengirim ulang kembali jika usaha pengiriman sebelumnya telah gagal.
 
 
 
