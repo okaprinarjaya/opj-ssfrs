@@ -14,6 +14,9 @@ Requirements
 
 Instalasi
 ---------
+Nyalakan server MongoDB terlebih dahulu. Pastikan Server MongoDB sudah running dengan baik.
+
+Lalu clone repository 
 
     git clone https://github.com/okaprinarjaya/opj-ssfrs.git
 
