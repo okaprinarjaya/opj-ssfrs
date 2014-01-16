@@ -14,12 +14,15 @@ Requirements
 
 Instalasi
 ---------
+
     git clone https://github.com/okaprinarjaya/opj-ssfrs.git
 
 Masuk ke direktori opj-ssfrs
+
     cd opj-ssfrs
 
 Susunan direktori opj-ssfrs adalah sebagai berikut
+
     opj-ssfrs
     -- server
     ---- server.js
@@ -47,7 +50,7 @@ Lanjutkan dengan menyesuaikan beberapa baris code dari file `test_client.js` .
 
 Test kirim file dengan perintah
 
-    node test_client.js nama_file.ext [enter]
+    node test_client.js nama_file_yg_ada_di_var_filePath.ext [enter]
 
 
 
